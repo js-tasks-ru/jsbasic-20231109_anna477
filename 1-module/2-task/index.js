@@ -11,6 +11,13 @@ function print(text) {
  */
 function isValid(name) {
   // ваш код...
+  return !!name && !name.includes(' ') && name.length >= 4;
+
+  // Расписанный код для меня как один из вариантов решения
+  // const isName = !!name;
+  // const noSpace = !name.includes(' ');
+  // const minLenght = name.length >= 4;
+  // return isName && noSpace && minLenght;
 }
 
 function sayHello() {
